@@ -23,8 +23,24 @@ def test_bubble_sort_descending():
 
 def test_bubble_sort_invalid():
     result = []
-    input_arr = [64, 34, 25, 12, 22, 11, 90]
+    input_arr = [64, 34, 25, 12, 22, 11, 90, 90, 90, 90]
 
     result = Lab3.bubble_sort(input_arr, 3)
 
-    assert (result == [])
+    assert (result == 1)
+
+def test_bubble_sort_invalid2():
+    result = []
+    input_arr = [1,2,3]
+
+    result = Lab3.bubble_sort(input_arr,3)
+
+    assert (result == 0)
+
+def test_bubble_sort_invalid3():
+    result = []
+    input_arr = ["A"]
+
+    result = Lab3.bubble_sort(input_arr,3)
+
+    assert (result == 2)
