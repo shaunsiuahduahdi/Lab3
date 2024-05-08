@@ -31,7 +31,7 @@ def test_bubble_sort_invalid():
 
 def test_bubble_sort_invalid2():
     result = []
-    input_arr = [1,2,3]
+    input_arr = []
 
     result = Lab3.bubble_sort(input_arr,3)
 
@@ -39,7 +39,7 @@ def test_bubble_sort_invalid2():
 
 def test_bubble_sort_invalid3():
     result = []
-    input_arr = ["A"]
+    input_arr = [64, 34, 25, 12, 22.2, 11, 90]
 
     result = Lab3.bubble_sort(input_arr,3)
 
